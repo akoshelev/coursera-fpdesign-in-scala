@@ -39,5 +39,8 @@ class StringParserTerrainSuite extends FunSuite {
     assert(Terrain5x5.terrain(Terrain5x5.Pos(2, 2)))
   }
 
-  test("findChar")
+  test("findChar on Terrain5x5 finds S and T") {
+    assert(Terrain5x5.startPos === Terrain5x5.Pos(1, 2))
+    assert(Terrain5x5.goal === Terrain5x5.Pos(1, 3))
+  }
 }
