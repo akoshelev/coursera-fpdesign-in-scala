@@ -88,5 +88,5 @@ def pairs[T, U](t: Generator[T], u: Generator[U]) = t flatMap {
   x => u map { y => (x, y) } }
 
 test(pairs(lists, lists)) {
-  case (xs, ys) => (xs ++ ys).length > xs.length 
+  case (xs, ys) => (xs ++ ys).length > xs.length
 }
